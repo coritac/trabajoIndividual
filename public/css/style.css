@@ -1,0 +1,141 @@
+body {
+    background: white;
+}
+.encabezado {
+    background-color: #EAC926; 
+    padding: 20px
+}
+.logo {
+    width: 350px;
+}
+
+.textoEncabezado {
+    font-weight: 400;
+    text-align: center;
+
+}
+.barra {
+    position: relative;
+    left: 400px;
+    width: 400%;
+    bottom: 90px;
+    background-image: linear-gradient(45deg, white);
+    justify-content: center;
+}
+
+.search-box {
+    background: white;
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    display: flex;
+    border-radius: 10px;
+    height: 60px;
+    position: relative;
+    overflow: hidden;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 15px 10px;
+    font-size: 20px;
+    background: transparent;
+}
+
+.search-box button img {
+    width: 25px;
+}
+
+.search-box button {
+    padding: 10px 12px;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    cursor: pointer;
+}
+
+.h3 {
+    display: flex;
+    justify-content: center;
+}
+
+.lista {
+    width: 90%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    height: 200px;
+    position: relative;
+    left: 200px;
+}
+
+.seccionDeOfertas {
+    position: relative;
+    left: 80px;
+}
+
+.seccionUltimaVista {
+    position: relative;
+    left: 80px;
+}
+
+.primerProducto {
+    background-color:rgb(218, 213, 213);
+    background-size: 25px 50px;
+}
+
+.segundoProducto {
+    background-color:rgb(218, 213, 213);
+}
+
+.tercerProducto {
+    background-color: rgb(218, 213, 213);;
+}
+
+.cuartoProducto {
+    background-color: rgb(218, 213, 213);;
+}
+
+.imagen1 {
+    height: 200px;
+    width: 200px;
+}
+
+.cafetera p h1 {
+    background-image: linear-gradient(45deg, white)
+}
+.nombre1 {
+    font-size: 15px;
+}
+
+.nombre2 {
+    font-size: 15px;
+}
+
+.nombre3 {
+    font-size: 15px;
+}
+
+.nombre4 {
+    font-size: 15px;
+}
+
+.seccion_1 {
+    font-family: sans-serif;
+    font-size: 10px;
+    font-style: normal;
+}
+
+.seccion_2 {
+    font-family: sans-serif;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: bold;
+}
+
+.seccion_3 {
+    font-family: sans-serif;
+    font-size: 10px;
+    font-style: lighter;
+}
