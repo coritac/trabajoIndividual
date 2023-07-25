@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuario</title>
+</head>
+<body>
+    <form action="/crear-usuario" method="POST" class="create-form">
+        <div class="control-formulario">
+            <label>Nombre y Apellido</label>
+            <input type="text" name="nombreApellido" class="control">
+        </div>
+        <div class="control-formulario">
+            <label>Nombre de Usuario</label>
+            <input type="text" name="nombreDeUsuario" class="control">
+        </div>
+        <div class="control-formulario">
+            <label>Fecha de nacimiento</label>
+            <input type="date" name="fecha" value="2021-07-22">
+        </div>
+        <div class="control-formulario">
+            <label>Domicilio</label>
+            <input type="text" name="domicilio" class="control"></input>
+        </div>
+        <div class="control-formulario">
+            <label>Perfil del usuario</label>
+            <select name="comprar o vender" class="control">
+                <option value="comprar">Comprar</option>
+                <option value="vender">Vender</option>
+            </select>
+        </div>
+        <div class="control-formulario">
+            <label>Categorías de Interés</label>
+            <select name="categoria" class="control">
+                <option value="electro">Electro</option>
+                <option value="moda">Moda</option>
+                <option value="hogar">Hogar</option>
+                <option value="jugueteria">Juguetería</option>
+                <option value="vidaSana">Vida Sana</option>
+            </select>
+        </div>
+        <div class="control-formulario">
+            <label>Foto de Usuario</label>
+            <input type="file" name="avatar" accept=".jpg" class="control-formulario">
+        </div>
+        <div  class="control-formulario">
+            <label>Contraseña</label>
+            <input type="password" name="contraseña" class="control-formulario">
+        </div>
+        <div  class="control-formulario">
+            <label>Confirmar Contraseña</label>
+            <input type="password" name="confirmarContraseña" class="control-formulario">
+        </div>
+
+        <button type="reset" class="boton-formulario">Borrar</button>
+        <button type="submit" class="boton-formulario">Enviar</button>
+
+    </form>
+    </form>
+</body>
+</html>
