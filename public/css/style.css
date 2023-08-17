@@ -154,14 +154,6 @@ header .burger-menu{
     margin-top: 7vh;
 }
 
-
-.control-login {
-    margin-bottom: 10%;
-    display: block;
-    margin-left: 10%;
-    width: 70%;
-}
-
 .titulo-login {
     text-align: center;
 }
@@ -347,6 +339,18 @@ br {
 
 .control {
     width: 85%;
+    padding: 8px 8px;
+}
+
+.control-login {
+    margin-bottom: 10%;
+    display: block;
+    margin-left: 10%;
+    width: 70%;
+}
+
+.control-2 {
+    width: 95%;
     padding: 8px 8px;
 }
 
