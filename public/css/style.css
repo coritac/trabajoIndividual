@@ -1,12 +1,221 @@
-* {
-    box-sizing: border-box;
+
+.seccion1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.articulo{
+    margin: 0 auto;
+    width: 30%;
+}
+
+.articulo:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 15px rgb(75, 153, 2);
+}
+
+.articulo-content{
+    border-top: 1px solid green;
+    padding: 15px;
+    position: relative;
+}
+
+.articulo .articulo-content .camion {
+    border: 1px solid green;
+    border-radius: 50%;
+    padding: 10px;
+    width: fit-content;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    font-size: 15px;
+    transition: all 1s;
+    background-color: white;
+}
+
+.articulo .articulo-content .camion:hover{
+    transform: rotateZ(-90deg);
+}
+
+.articulo .articulo-content .camion i{
+    color: green;
+}
+.articulo .articulo-content .info-articulo{
+    display: flex;
+    align-items: flex-end;
+}
+.articulo .articulo-content .info-articulo p:nth-child(1){
+    flex-grow: .3;
+}
+.articulo .articulo-content .info-articulo p:nth-child(2){
+    flex-grow: .7;
+    color: green;
+    font-size: 14px;
+}
+
+.articulo .articulo-content .nombre-articulo{
+    color: black;
+    font-size: 15px;
+}
+
+header{
+    background-color: yellow;
+}
+
+header .logo{
+    width: 130px;
+    padding: 25px 20px 15px;
+    flex-grow: .5;
+}
+
+header p{
+    text-align: center;
+    margin: 25px 10px;
+}
+
+.search-bar{
+    background-color: yellow;
+    padding: 5px;
+    width: 99%;
+    display: inline-block;
+    border: none;
+    border-radius: 5px;
+    flex-grow: .5;
+}
+
+.buttonbar{
+    background-color: yellow;
+    margin-left: 1vw;
+    border: none;
+}
+
+.search-bar .buttonbar:hover {
+    cursor: pointer;
+}
+
+.search-bar #input{
+    background-color: #47df29;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.top-nav{
+    display: flex;
+    gap: 7%;
+    flex-grow: .5;
+    list-style: none;
+}
+
+.right-nav{
+    display: flex;
+    list-style: none;
+    gap: 5%;
+    flex-grow: .2;
+    justify-content: flex-end;
+    margin-right: 15px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-end;
+}
+
+header .burger-menu{
+    color: white;
+    background-color: grey;
+    padding: 10px;
+    width: 15px;
+    border-radius: 3px;
+    margin-right: auto;
+    margin-left: auto;   
+}
+
+.registro {
+    width: 75%;
+    margin-left: 15%;
+    margin-top: 4vh;
+}
+
+.form-reg{
+    background-color: lightgrey;
+    width: 35%; margin-left: 32%;
+    border-radius: 20px;
+    margin-top: 2%;
+    padding-top: 1vh;
+}
+
+.login {
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 7vh;
+}
+
+
+.control-login {
+    margin-bottom: 10%;
+    display: block;
+    margin-left: 10%;
+    width: 70%;
+}
+
+.titulo-login {
+    text-align: center;
+}
+
+.boton-formulario-register{
+    background-color: blue;
+    border: none;
+    font-size: 20px;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 24%;
+}
+
+.boton-formulario-login {
+    margin-left: 42%;
+    background-color: blue;
+    border: none;
+    font-size: 20px;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.fa-magnifying-glass{
+    border: none;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: white;
+}
+
+main {
+    background-color: white;
+}
+
+footer {
+    background-color: white;
+    text-align: center;
+    
+}
+
+br {
+    background-color: white;
 }
 
 .main-header {
-    background-color: #EAC926;
-    padding: 20px;
-    position: fixed;
-    top: 0;
+    display: flex;
+    height: 17vh;
+    align-items: center;
+    flex-direction: column;
 }
 
 .burger-menu {
@@ -22,16 +231,25 @@
 }
 
 .logo {
-    width: 200px;
+    width: 280px;
+}
+
+.barra {
+    border-radius: 3px;
+    width: 90%;
+    height: 8vh;
 }
 
 .copy-header {
-    font-weight: 360px;
+    font-weight: 330px;
+    font-size: 15px;
     text-align: center;
 }
 
 .main-navbar {
-    display: none;
+    display: flex;
+    gap: 7%;
+    flex-grow: .5;
 }
 
 .main-navbar ul {
@@ -48,6 +266,40 @@
     font-size: 17px;
 }
 
+.main-header-top-bar {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+    padding: 14px;
+    max-width: 1100px;
+}
+
+.main-principal {
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+}
+
+.main-principal ul{
+    background-color: white;
+}
+
+.texto-1 {
+    color: #667;
+    padding: 10px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.texto-2 {
+    color: #667;
+    padding: 10px;
+    font-weight: 500;
+    text-align: center;
+}
+
 .producto {
     border: 1px solid grey;
     padding: 0 15px ;
@@ -59,7 +311,7 @@
     position: center;
 }
 
-.product:hover h2 {
+.producto:hover h2 {
     opacity: 1;
     background-color: burlywood;
     border-radius: 50%;
@@ -79,83 +331,211 @@
     align-items: center;
     opacity: 0;
     transition: all 400ms;
-
 }
 
 .create-form {
     padding: 20px 15px;
 }
 
-.control-formulario {
-    margin-bottom: 15px;
-}
-
-.control-formulario label {
+.control-formulario  {
     margin-bottom: 5px;
-    font-style: italic;
+    
     display: block;
+    margin-left: 20%;
+    width: 50%;
 }
 
 .control {
-    width: 100%;
+    width: 85%;
     padding: 8px 8px;
 }
 
-.boton-formulario {
-    background-color: blue;
-    border: none;
-    font-size: 20px;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
+.imagen-home{
+    width: 100%;
+}
+
+.seccion-main-up {
+    display: flex;
+    justify-content: space-around;
+}
+
+.seccion-main-down {
+    display: flex;
+    justify-content: space-around;
+}
+
+.seccion-main-up i,.seccion-main-down i{
+    position: relative;
+    left: 25px;
+    bottom: 32px;
+}
+
+.seccion-main-down ul,.seccion-main-up ul{
+    padding: 20px;
+    border: solid 2px #ebebeb;
+    background-color: white;
+    margin: 10px;
+}
+
+.seccion-main-down img,.seccion-main-up img{
+    border-bottom:solid 1px #ebebeb;
+    margin-bottom: 10px;
+}
+
+.precio{
+    font-size: x-large;
+    padding: 1px;
+    text-align: center;
+}
+
+.descuento{
+    font-size: 15px;
+    opacity: 0.9;
+    color:#39b54a;
+    padding: 3px;
+}
+
+.producto:hover{
+    border:solid 2.5px rgb(166, 158, 158);
+}
+
+.producto, .producto-oferta1, .producto-oferta2, .producto-oferta3, .producto-oferta4 {
+    border: solid 2px rgb(166, 158, 158);
+    transition: border, 450ms;
+}
+
+.producto div {
+    display:flex;
+    padding: 5px;
+}
+
+.pie-de-pagina {
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+.pie-de-pagina  p{
+    opacity: 0.6;
+}
+
+.parrafo-pie-pagina .titulo {
+    font-size: 15px;
+}
+
+.parrafo-pie-pagina {
+    font-size: 12px;
+    margin: auto;
+    max-width: 430px;
+    padding: 0 15px 0 15px;
+}
+
+.Copyright {
+    text-align: center;
+    opacity: 0.3;
 }
 
 
-@media (min-width: 768px) {
+@media screen and (min-width: 0px) and (max-width: 700px) {
+
+    .form-reg{
+        width: 60%;
+        margin-left: 20%;
+    }
+
+    .navbar{
+        display: none;
+    }
+
+    .pie-de-pagina{
+        flex-wrap: wrap;
+    }
+
+    .fa-magnifying-glass{
+        height: 2vh;
+        width: 3vw;
+        font-size: 1em;
+    }
+
+    .boton-formulario{
+        margin-left: 20%;
+    }
+
+    .search-bar{
+        width: 96%;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+
+    .copy-header {
+        display: block;
+        text-align: center;
+        font-weight: 350px;
+    }
+    
+   .seccion-main-up {
+        align-items: center;
+        flex-direction: column;
+        display: flex;
+    }
+
+    .seccion-main-down {
+        align-items: center;
+        flex-direction: column;
+        display: flex;
+    }
+
+    .imagen-oferta {
+        background-size: 204.23px 205.23px;
+    }
+
+    .pie-de-pagina {
+        align-items: center;
+        flex-direction: column;
+        display: flex;
+        margin: auto;
+    }
+
+    .pie-de-pagina .parrafo-pie-pagina {
+        padding: 20px;
+    }
+    
     .main-header-top-bar {
         display: flex;
         justify-content: space-between;
     }
+
     .copy-header {
         max-width: 350px;
         text-align: right;
     }
+
     .navbar-button {
         display: none;
     }
+
     .main-navbar {
         display: flex;
         justify-content: space-between;
     }
+
     .main-navbar ul {
         display: flex;
     }
+
     .main-navbar li {
         margin: 0 5px;
     }
 }
 
-@media (min-width: 1200px) {
-    .logo {
-        width: 250px;
+@media (min-width: 700px)  {
+
+    .burger-menu {
+        display: none;
     }
-    .main-header-top-bar, .main-navbar {
-        max-width: 1200px;
-        margin: auto;
-    }
-    .copy-header {
-        margin: 0;
-        max-width: none;
-        font-size: 18px;
-        font-weight: 400px;
-    }
-    .main-navbar {
-        margin-top: 40px;
-    }
-    .main-navbar li {
-        margin: 0 10px;
-    }
-    .main-navbar a {
-        font-size: 19px;
-    }
+    
+    
+
+ 
 }

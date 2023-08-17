@@ -4,80 +4,78 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RMercado Liebre</title>
+    <title>Mercado Liebre</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fotawesome.com/418aba2bb0.js" crossorigin="anonymus"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/85454b65e5.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
+
+
 <body>
-    <header class="main-header">
-        <div class="main-header-top-bar">
-            <img src="img/logo-mercado-liebre.svg" class="logo">
-            <div class="searchBar">
-                <form action="" method="GET">
-                    <input class="barra" placeholder="Buscar en mercado liebre" type="search" id="site-search" name="q">
-                    <button class="buttonbar"><i class="fa-solid fa-magnifying-glass"></i></button>
-                </form>
-            </div>
 
-            <h2 class="copy-header">
-                <i class="fa-solid fa-hand-holding-dollar"></i>
-                Comprá en cuotas y sin tarjeta de crédito
-            </h2>
+    <header>
+        <div><a href="/#"><img src="img/logo-mercado-liebre.svg" class="logo"></a></div>
+        <div class="search-bar">
+            <input type="search" style="width: 35%; height: 6vh; margin-left: 35%; float: left; font-size: initial;"
+                placeholder="Buscar en mercado liebre">
+            <button class="buttonbar"><i class="fa-solid fa-magnifying-glass"></i></button>
         </div>
-
-        <a href="#" class="navbar-button">
-            <i class="fa-solid fa-bars"></i>
-        </a>
-
-
-        <nav class="main-navbar">
-            <ul class="left-navbar">
+    
+        <div>
+            <p><i class="fa-solid fa-hand-holding-dollar"></i>
+                Comprá en cuotas y sin tarjeta de crédito</p>
+        </div>
+    
+    
+        <nav class="navbar">
+            <ul class="top-nav">
                 <li><a href="#">Ofertas</a></li>
                 <li><a href="#">Tiendas Oficiales</a></li>
                 <li><a href="#">Vender</a></li>
                 <li><a href="#">Ayuda</a></li>
-                </li>
             </ul>
-
-            <ul class="right-navbar">
-                <li><a href="/register">Creá tu cuenta <i class="fa-regular fa-credit-card"></i></a></li> 
-                <li><a href="#">Ingresá <i class="fa-solid fa-location-arrow"></i></a></li> 
-                <li><a href="#">Mis compras <i class="fa-solid fa-cart-arrow-down"></i></a></li> 
+    
+            <ul class="right-nav">
+                <li><a href="/register">Creá tu cuenta <i class="fa-regular fa-credit-card"></i></a></li>
+                <li><a href="/login">Ingresá <i class="fa-solid fa-location-arrow"></i></a></li>
+                <li><a href="#">Mis compras <i class="fa-solid fa-cart-arrow-down"></i></a></li>
             </ul>
         </nav>
-
     </header>
 
 <main>
-    <form action="/register" method="POST" class="formulario-registro">
+    <form action="/#" method="" class="form-reg">
+        <div class="" style="text-align: center;">
+            <h3>Bienvenido! Para registrarte te pediremos algunos datos.</h3>
+        </div>
+
         <div class="registro">
-            <label>Nombre y Apellido</label>
-            <input type="text" name="nombreApellido" class="control">
+            <input id="nombreApellido" type="text" name="nombreApellido" class="control" required minlength="5" maxlength="20" placeholder="Nombre y Apellido">
         </div>
         <div class="registro">
-            <label>Nombre de Usuario</label>
-            <input type="text" name="nombreDeUsuario" class="control">
+            <input type="text" name="nombreDeUsuario" required minlength="6" maxlength="12" class="control" placeholder="Nombre de Usuario">
         </div>
         <div class="registro">
             <label>Fecha de nacimiento</label>
             <input type="date" name="fecha" value="2021-07-22">
         </div>
         <div class="registro">
-            <label>Domicilio</label>
-            <input type="text" name="domicilio" class="control"></input>
+            
+            <input type="text" required minlength="12" maxlength="25" name="domicilio" class="control" placeholder="Domicilio"></input>
         </div>
         <div class="registro">
             <label>Perfil del usuario</label>
-            <select name="comprar o vender" class="control">
+            <select name="comprar o vender" class="control" style="width: 90%;">
                 <option value="comprar">Comprar</option>
                 <option value="vender">Vender</option>
             </select>
         </div>
         <div class="registro">
             <label>Categorías de Interés</label>
-            <select name="categoria" class="control">
+            <select required name="categoria" class="control" style="width: 90%;">
                 <option value="electro">Electro</option>
                 <option value="moda">Moda</option>
                 <option value="hogar">Hogar</option>
@@ -87,48 +85,53 @@
         </div>
         <div class="registro">
             <label>Foto de Usuario</label>
-            <input type="file" name="avatar" accept=".jpg" class="control-formulario">
+            <input required type="file" name="avatar" accept=".jpg" class="">
         </div>
         <div  class="registro">
-            <label>Contraseña</label>
-            <input type="password" name="contraseña" class="control-formulario">
+            <input required type="password" name="contraseña" class="control-formulario" placeholder="Contraseña">
         </div>
         <div  class="registro">
-            <label>Confirmar Contraseña</label>
-            <input type="password" name="confirmarContraseña" class="control-formulario">
+            <input required type="password" name="confirmarContraseña" class="control-formulario" placeholder="Confirmar Contraseña">
         </div>
         <br>
         <br>
-        <button type="reset" class="boton-formulario">Borrar</button>
-        <button type="submit" class="boton-formulario">Enviar</button>
+        <button type="reset" class="boton-formulario-register">Borrar</button>
+        <a href="/#"><button type="submit" class="boton-formulario-register">Enviar</button></a>
 
+        <br>
+        <br>
     </form>
-    <footer>
-        <div class="pie-de-pagina">
+</main>   
+
+</body>
+<footer>
+    <div class="pie-de-pagina" style="margin-top: 5vh;">
         <div class="parrafo-pie-pagina">
+            <i class="fa-solid fa-credit-card fa-2xl" style="color: #336DFF"></i>
             <p class="titulo">Paga con tarjeta o en efectivo</p>
-            <p class="parrafo">Con MercadoLibreCash tenes cuotas sin interes con tarjeta 
+            <p class="">Con MercadoLibreCash tenes cuotas sin interes con tarjeta
                 o en efectivo en puntos de pago. Y siempre es seguro!</p>
         </div>
-        <div class="pie-de-pagina">
         <div class="parrafo-pie-pagina">
+            <i class="fa-solid fa-gift fa-2xl" style="color: #336DFF"></i>
             <p class="titulo">Envio gratis desde los $2500</p>
-            <p class="parrafo">Solo por estar registrado en Mercado Liebre tenes envios gratis en miles de productos. 
+            <p class="">Solo por estar registrado en Mercado Liebre tenes envios gratis en
+                miles de productos.
                 Es un beneficio de Mercado Puntos.</p>
         </div>
-        <div class="pie-de-pagina">
-        <div class="parrafo-pie-pagina">
-            <p class="titulo">Seguridad de principio a fin</p>
-            <p class="parrafo-pie-pagina">No te gusta? Devolvelo! 
-                En Mercado Liebre no hay nada que no puedas hacer 
-                porque estas siempre protegid@</p>
-        </div>
-        </div>
-    
-        <div class="Copyright">
-            <p>Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
-        </div>
-    </footer>
-    
-</body>
+            <div class="parrafo-pie-pagina">
+                <i class="fa-solid fa-user-shield fa-2xl" style="color: #336DFF"></i>
+                <p class="titulo">Seguridad de principio a fin</p>
+                <p class="">No te gusta? Devolvelo!
+                    En Mercado Liebre no hay nada que no puedas hacer
+                    porque estas siempre protegid@</p>
+            </div>
+    </div>
+
+            <div class="Copyright">
+                <p>Copyright © 1999-2020 Mercado Liebre S.R.L.</p>
+            </div>
+</footer>
+
+
 </html>
